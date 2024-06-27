@@ -14,7 +14,7 @@ int main ()
     char a [9] = { '1' , '2' , '3' , '4' , '5' , '6' , '7' , '8' , '9' } ;
     char u1 [50] , u2 [50] , symbol , re , start , dec , x , o , ga , ch , choice__ ;
     int choice , score = -1 , player = 1 , s ;
-    FILE* p = fopen ( "score/score.txt" , "a+" ) ;
+    FILE* p = fopen ( "score.txt" , "a+" ) ;
     fclose ( p ) ;
 star_Programe:  
     system ( "cls" ) ;
@@ -34,7 +34,7 @@ star_Programe:
                 system ( "cls" ) ;
                 print_Date () ;
                 printf ( "\n\n\n\t\t\t * Enter names of different players :\n\n" ) ;
-                p = fopen ( "score/score.txt" , "a+" ) ;
+                p = fopen ( "score.txt" , "a+" ) ;
                 printf ( "\n\n\t\t\t * Enter name of player_1 -->  " ) ;
                 scanf ( "%s" , u1 ) ;
                 fprintf ( p , "\n%s" , u1 ) ;
@@ -89,7 +89,7 @@ star_Programe:
                 player ++ ;
                 board ( x , o , u1 , u2 , a ) ;
             } while ( score == -1 ) ;
-            p = fopen ( "score/score.txt" , "a+" ) ;
+            p = fopen ( "score.txt" , "a+" ) ;
             if ( score == 1 )
              {
                 if ( player == 2 ) 
@@ -118,7 +118,7 @@ start:
             printf ( "\n\n\n" ) ;
             printf ( " \tLEADERBOARD\n\n " ) ;
             char c ;
-            p = fopen ( "score/score.txt" , "r" ) ;
+            p = fopen ( "score.txt" , "r" ) ;
             while ( ( c = getc (p) ) != EOF )
              {
                 printf ( "%c" , c ) ;
