@@ -111,14 +111,14 @@ void print_date() {
 
 int check_for_win(const char* a) {
     int win_patterns[8][3] = {
-        {0, 1, 2}, // Top row
-        {3, 4, 5}, // Middle row
-        {6, 7, 8}, // Bottom row
-        {0, 3, 6}, // Left column
-        {1, 4, 7}, // Middle column
-        {2, 5, 8}, // Right column
-        {0, 4, 8}, // Left diagonal
-        {2, 4, 6}  // Right diagonal
+        { 0 , 1 , 2 } , // Top row
+        { 3 , 4 , 5 } , // Middle row
+        { 6 , 7 , 8 } , // Bottom row
+        { 0 , 3 , 6 } , // Left column
+        { 1 , 4 , 7 } , // Middle column
+        { 2 , 5 , 8 } , // Right column
+        { 0 , 4 , 8 } , // Left diagonal
+        { 2 , 4 , 6 }  // Right diagonal
     };
 
     for (int i = 0; i < 8; i++) {
@@ -153,7 +153,7 @@ void print_board(const char* a, char x, char o, const char* u1, const char* u2) 
     printf("\t\t\t\t\t\t\t\t\xB2             \xB2             \xB2             \xB2\n");
     printf("\t\t\t\t\t\t\t\t\xB2             \xB2             \xB2             \xB2\n");
     printf("\t\t\t\t\t\t\t\t\xB2     %c       \xB2     %c       \xB2     %c       \xB2\n", a[3], a[4], a[5]);
-    printf("\t\t\t\t\t\t\t\t\t\t\t\t\xB2             \xB2             \xB2             \xB2\n");
+    printf("\t\t\t\t\t\t\t\t\xB2             \xB2             \xB2             \xB2\n");
     printf("\t\t\t\t\t\t\t\t\xB2-------------\xB2-------------\xB2-------------\xB2\n");
     printf("\t\t\t\t\t\t\t\t\xB2             \xB2             \xB2             \xB2\n");
     printf("\t\t\t\t\t\t\t\t\xB2             \xB2             \xB2             \xB2\n");
